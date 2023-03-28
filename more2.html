@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+
+<p>Click the button to change which season you prefer the most.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let favDrink = prompt("Which season do you prefer the most?", "Spring");
+  switch(favSpring) {
+    case "Spring is great":
+      text = "Excellent choice. Spring is the best.";
+      break;
+    case "Summer":
+      text = "Summer is my favorite too!";
+      break;
+    case "Winter":
+      text = "Really? Do you prefer winter?";
+      break;
+    default:
+      text = "Keep people indoors.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
+
+
